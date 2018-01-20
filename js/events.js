@@ -26,7 +26,7 @@ $('p').on('click', getIt);
 
 $(window).on('load', frameIt);
 
-$('#typing').on('keydown', pressIt);
+$('form input[type=text]').on('keydown', pressIt);
 
 $('form').on('submit', submitIt);
   
