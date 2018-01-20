@@ -35,7 +35,7 @@ frameIt();
 
 $('input[type=text]').on('keydown', pressIt);
 
-
+submitIt();
   
 });
 
