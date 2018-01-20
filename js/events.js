@@ -8,7 +8,7 @@ function frameIt() {
 }
 
 function pressIt(e) {
-  if (e.keyCode == 71) {
+  if (e.which == 71) {
     alert('g was pressed.');
   }
   console.log('pressit called');
