@@ -26,8 +26,6 @@ $('p').on('click', getIt);
 
 $(window).on('load', frameIt);
 
-
-
 $('form').on('submit', submitIt);
   
 });
