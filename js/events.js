@@ -12,12 +12,11 @@ function frameIt() {
 }
 
 function pressIt() {
-  if ($(this).keyCode == 71) {
+  $('$typing').on('keydown', function(e) {
+    if ($(this).keyCode == 71) {
     alert('g was pressed.');
-  }
-  console.log('pressit called');
-  console.log($(this).target);
-  console.log(this.target);
+    }  
+  })
 }
 
 function submitIt() {
