@@ -11,7 +11,7 @@ function pressIt() {
   if ($('#target').keyCode == 71) {
     alert('g was pressed.');
   }
-  console.log($(this), $(this).nodeName);
+  console.log('pressit called');
 }
 
 function submitIt() {
