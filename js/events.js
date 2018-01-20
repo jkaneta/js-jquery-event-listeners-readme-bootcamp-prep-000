@@ -6,6 +6,7 @@ function getIt() {
 }
 
 function frameIt() {
+  
   $('img').addClass('tasty');
 }
 
@@ -25,7 +26,7 @@ function submitIt() {
 $(document).ready(function(){
 
 // call functions here
-$('p').on('click', getIt);
+getIt();
 
 $(window).on('load', frameIt);
 
