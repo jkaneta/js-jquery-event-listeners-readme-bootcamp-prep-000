@@ -13,6 +13,7 @@ function pressIt() {
   }
   console.log('pressit called');
   console.log($(this).target);
+  console.log(this.target);
 }
 
 function submitIt() {
