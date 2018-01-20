@@ -12,7 +12,7 @@ function pressIt() {
     alert('g was pressed.');
   }
   console.log('pressit called');
-  console.log($(this).which);
+  console.log($(this).target);
 }
 
 function submitIt() {
