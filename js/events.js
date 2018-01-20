@@ -33,7 +33,7 @@ getIt();
 
 frameIt();
 
-$('input[type=text]').on('keydown', pressIt);
+pressIt();
 
 submitIt();
   
