@@ -21,7 +21,10 @@ function pressIt() {
 }
 
 function submitIt() {
-  alert('Your form is going to be submitted now.');
+  $('form').on('submit', function(e) {
+    alert('Your form is going to be submitted now.');
+  });
+  
 }
 
 $(document).ready(function(){
@@ -29,11 +32,11 @@ $(document).ready(function(){
 // call functions here
 getIt();
 
-$(window).on('load', frameIt);
+frameIt();
 
 $('input[type=text]').on('keydown', pressIt);
 
-$('form').on('submit', submitIt);
+
   
 });
 
