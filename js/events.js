@@ -7,8 +7,8 @@ function frameIt() {
   $('img').addClass('tasty');
 }
 
-function pressIt() {
-  if (this.keyCode == 71) {
+function pressIt(e) {
+  if (e.keyCode == 71) {
     alert('g was pressed.');
   }
   console.log('pressit called');
