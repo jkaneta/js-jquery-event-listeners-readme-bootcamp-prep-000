@@ -12,7 +12,6 @@ function pressIt() {
     alert('g was pressed.');
   }
   console.log('pressit called');
-  console.log($(this).);
 }
 
 function submitIt() {
