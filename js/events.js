@@ -1,40 +1,35 @@
 //define functions here
 function getIt() {
-  $('p').on('click', function() {
-    alert('Hey!');
-  };
+  alert('Hey!');
 }
 
 function frameIt() {
-  $(window).on('load', function() {
-    $('img').addClass('tasty');
-  });
+  $('img').addClass('tasty');
 }
 
 function pressIt() {
-  $('$typing').on('keydown', function(e) {
-    if ($(this).keyCode == 71) {
+  if ($(this).keyCode == 71) {
     alert('g was pressed.');
-    }  
-  })
+  }
+  console.log('pressit called');
+  console.log($(this).target);
+  console.log(this.target);
 }
 
 function submitIt() {
-  $('form').on('submit', function(e) {
-    alert('Your form is going to be submitted now.');
-  });
+  alert('Your form is going to be submitted now.');
 }
 
 $(document).ready(function(){
 
 // call functions here
-getIt();
+$('p').on('click', getIt);
 
-frameIt();
+$(window).on('load', frameIt);
 
-pressIt();
+$('input[type=text]').on('keydown', pressIt);
 
-submitIt();
+$('form').on('submit', submitIt);
   
 });
 
